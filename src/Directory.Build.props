@@ -1,0 +1,13 @@
+<Project>
+<PropertyGroup>
+  <ParentDirectoryBuildPropsPath>$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)..\'))</ParentDirectoryBuildPropsPath>
+</PropertyGroup>
+
+<ImportGroup>
+    <Import Condition="$(ParentDirectoryBuildPropsPath) != ''" Project="$(ParentDirectoryBuildPropsPath)" />
+</ImportGroup>
+    <PropertyGroup>
+        <CscToolPath>$(MSBuildProjectDirectory)/../../tool/Ridairekushon/bin/Release/$(TargetFramework)</CscToolPath>
+        <CscToolExe>rida</CscToolExe>
+    </PropertyGroup>
+</Project>
