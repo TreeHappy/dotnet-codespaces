@@ -15,7 +15,8 @@
         "ghcr.io/devcontainers-extra/features/pass-apt-get:1": {},
         "ghcr.io/devcontainers-extra/features/fd:1": {},
         "ghcr.io/devcontainers-extra/features/fzf:1": {},
-        "ghcr.io/devcontainers-extra/features/ripgrep:1": {}
+        "ghcr.io/devcontainers-extra/features/ripgrep:1": {},
+        "ghcr.io/devcontainers-extra/features/tmux-apt-get:1": {}
     },
     "customizations": {
         "vscode": {
