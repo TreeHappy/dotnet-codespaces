@@ -27,7 +27,7 @@ static int CompileWithRspFile(string[] args)
     if (string.IsNullOrWhiteSpace(error) is false)
     {
         File.WriteAllText("bin/std_error", error);
-        //Console.Error.WriteLine(error);
+        Console.Error.WriteLine(error);
     }
 
     if (string.IsNullOrWhiteSpace(output) is false)
