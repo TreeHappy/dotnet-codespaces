@@ -1,7 +1,7 @@
 ﻿using System.Diagnostics;
 
-File.WriteAllLines("cscparameters", args);
-File.WriteAllText("rspfile", File.ReadAllText(args[1][1..]));
+File.WriteAllLines("bin/cscparameters", args);
+File.WriteAllText("bin/rspfile", File.ReadAllText(args[1][1..]));
 
 static int CompileWithRspFile(string[] args)
 {
@@ -26,13 +26,13 @@ static int CompileWithRspFile(string[] args)
 
     if (string.IsNullOrWhiteSpace(error) is false)
     {
-        File.WriteAllText("std_error", error);
-        Console.Error.WriteLine(error);
+        File.WriteAllText("bin/std_error", error);
+        //Console.Error.WriteLine(error);
     }
 
     if (string.IsNullOrWhiteSpace(output) is false)
     {
-        File.WriteAllText("std_output", output);
+        File.WriteAllText("bin/std_output", output);
         Console.WriteLine(output);
     }
 
