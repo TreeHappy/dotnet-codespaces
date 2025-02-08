@@ -1,4 +1,11 @@
 language: 'csharp'
+
+project:
+  name: 'Ridairekushon'
+  description: '🚀 c# build ➡️ csc.dll ➡️ 🌚.'
+  owner: 'tree'
+  maintainers: ['moi']
+  
 tasks:
   build:
     command: 'dotnet build'
