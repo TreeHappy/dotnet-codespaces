@@ -1,3 +1,3 @@
-﻿System.IO.File.WriteAllLines("cscparameters.txt");
+﻿File.WriteAllLines("cscparameters.txt", args);
 
 Console.WriteLine("Ping.");

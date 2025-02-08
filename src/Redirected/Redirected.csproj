@@ -9,6 +9,8 @@
     <TargetFramework>net9.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <CscToolPath>$(MSBuildProjectDirectory)/../Ridairekushon/bin/Debug/net8.0</CscToolPath>
+    <CscToolExe>csc.dll</CscToolExe>
   </PropertyGroup>
 
 </Project>
