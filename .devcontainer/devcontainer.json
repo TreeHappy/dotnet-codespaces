@@ -25,7 +25,8 @@
                 "ms-dotnettools.csharp",
                 "HenryTsz.nvim",
                 "MurlocCra4ler.leap",
-                "Marlodev.ganbaru"
+                "Marlodev.ganbaru",
+                "christian-kohler.path-intellisense"
             ]
         }
     },

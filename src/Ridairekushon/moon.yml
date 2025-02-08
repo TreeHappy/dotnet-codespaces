@@ -1,0 +1,11 @@
+language: 'csharp'
+tasks:
+  build:
+    command: 'dotnet build'
+    inputs:
+      - 'Program.cs'
+      - 'Ridairekushon.csproj'
+      - 'moon.yml'
+    outputs:
+      - 'bin/**/*'
+      - 'obj/**/*'
