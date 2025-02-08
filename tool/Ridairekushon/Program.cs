@@ -5,7 +5,6 @@ File.WriteAllText("bin/rspfile", File.ReadAllText(args[1][1..]));
 
 static int CompileWithRspFile(string[] args)
 {
-    // Configure process
     var startInfo = new ProcessStartInfo
     {
         FileName = "dotnet",
@@ -16,8 +15,8 @@ static int CompileWithRspFile(string[] args)
         CreateNoWindow = true
     };
 
-    // Execute compiler
     using var process = new Process { StartInfo = startInfo };
+
     process.Start();
     process.WaitForExit();
 
