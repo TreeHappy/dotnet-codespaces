@@ -24,14 +24,17 @@ static int CompileWithRspFile(string[] args)
     var output = process.StandardOutput.ReadToEnd();
     var error = process.StandardError.ReadToEnd();
 
-    File.WriteAllText("std_output", output);
-    File.WriteAllText("std_error", error);
-
     if (string.IsNullOrWhiteSpace(error) is false)
+    {
+        File.WriteAllText("std_error", error);
         Console.Error.WriteLine(error);
+    }
 
-    if (string.IsNullOrWhiteSpace(output) is false) 
+    if (string.IsNullOrWhiteSpace(output) is false)
+    {
+        File.WriteAllText("std_output", output);
         Console.WriteLine(output);
+    }
 
     return process.ExitCode;
 }
