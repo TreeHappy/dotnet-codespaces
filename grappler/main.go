@@ -123,7 +123,7 @@ func defaultConfig() Config {
 	return Config{
 		Shell:        "zsh",
 		ShellArgs:    []string{"-c"},
-		MarkdownCmd:  "echo",
+		MarkdownCmd:  "",
 		MarkdownArgs: []string{"-e"},
 		Keys: KeyMap{
 			Execute:          tea.KeyEnter,
