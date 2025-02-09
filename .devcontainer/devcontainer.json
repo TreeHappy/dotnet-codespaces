@@ -32,7 +32,9 @@
                 "HenryTsz.nvim",
                 "MurlocCra4ler.leap",
                 "Marlodev.ganbaru",
-                "christian-kohler.path-intellisense"
+                "christian-kohler.path-intellisense",
+                "eamodio.gitlens",
+                "mhutchie.git-graph"
             ]
         }
     },
