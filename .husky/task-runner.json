@@ -4,7 +4,7 @@
       {
          "name": "commit-message-lintert",
          "command": "dotnet",
-         "args": [ "husky", "exec", ".husky/csx/commit-linter.csx" ]
+         "args": [ "husky", "exec", ".husky/csx/commit-lint.csx" ]
       }
    ]
 }
