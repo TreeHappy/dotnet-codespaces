@@ -8,6 +8,13 @@
         "csc"
       ],
       "rollForward": false
+    },
+    "husky": {
+      "version": "0.7.2",
+      "commands": [
+        "husky"
+      ],
+      "rollForward": false
     }
   }
 }
