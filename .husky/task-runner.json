@@ -9,7 +9,7 @@
             "exec",
             ".husky/csx/commit-lint.csx",
             "--args",
-            "${args}"]
+            "${staged}"]
       }
    ]
 }
